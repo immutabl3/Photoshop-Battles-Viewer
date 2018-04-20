@@ -99,6 +99,8 @@ $(document).ready(function() {
       let originalTitle = post.data.title.replace("PsBattle: ", "").replace("This ", "").replace("this ", "");
       originalTitle = originalTitle.charAt(0).toUpperCase() + originalTitle.slice(1);
       let originalImage = post.data.url;
+      // if the url is http change it to https to prevent tracker protection
+      if(originalImage.indexOf("http:") > -1){originalImage.replace("http", "https")}
 
       $("#originals").append(
         `<div class="originalCard">
@@ -139,6 +141,8 @@ $(document).ready(function() {
     let originalLink = data[0].data.children[0].data.permalink;
     let shoppedImages = data[1].data.children;
     shopsArray = [];
+    // if the url is http change it to https to prevent tracker protection
+    if(originalImage.indexOf("http:") > -1){originalImage.replace("http", "https")}
 
     // add the original reddit post image to the left
     $("#originalArea").append(
