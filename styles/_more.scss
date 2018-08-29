@@ -1,0 +1,22 @@
+.more {
+	width: 100%;
+	
+	> div {
+		background-color: rgb(51, 102, 153);
+		color: white;
+		font-family: "Dosis";
+		font-size: 1.1em;
+		height: 40px;
+		width: 200px;
+		text-align: center;
+		line-height:  40px;
+		border-radius: 10px;
+		margin: 50px auto;
+		cursor: pointer;
+
+		&:hover {
+			background-color: rgb(90, 140, 190);
+		}
+	}
+}
+

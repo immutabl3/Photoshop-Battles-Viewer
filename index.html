@@ -1,59 +1,47 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-  <title>Photoshop Battles Viewer</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-  </script>
-  <script src="script.js">
-  </script>
-  <link href="styles.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis|Roboto">
-</head>
-
-<body>
-  <header>
-    <div id="logo">
-      <img src="https://image.ibb.co/eqqp1n/PSB_Logo.png">
-      <h1>Photoshop Battles</h1>
-    </div>
-    <div id="sort">
-      <div>
-        <p>Sort posts by top of: </p>
-        <p class="sorter">All Time</p>
-        <p class="sorter">Year</p>
-        <p class="sorter">Month</p>
-        <p class="sorter">Week</p>
+  <head>
+    <meta charset="UTF-8">
+    <title>Photoshop Battles Viewer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis|Roboto">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img class="logo__image" src="https://image.ibb.co/eqqp1n/PSB_Logo.png">
+        <h1 class="logo__heading">Photoshop Battles</h1>
       </div>
-    </div>
-  </header>
-
-
-  <section id="originals">
-
-  </section>
-
-  <div id="more">
-    <div>More...</div>
-  </div>
-
-  <div id="modal">
-    <div id="originalArea"></div>
-    <div id="shoppedArea">
-      <div>
-        <p>Shopped Images</p>
-        <h2 id="shoppedTitle"></h2>
-        <img id="shoppedImage">
-        <p id="username"></p>
-        <span id="leftClick">&lt;</span>
-        <span id="rightClick">&gt;</span>
-        <div id="shoppedButtons">
+      <div class="sort">
+        <div class="sort__container">
+          <p class="sorter--label">Sort posts by top of: </p>
+          <p class="sorter">All Time</p>
+          <p class="sorter">Year</p>
+          <p class="sorter">Month</p>
+          <p class="sorter">Week</p>
         </div>
       </div>
+    </header>
+    <section class="originals"></section>
+    <div id="more">
+      <div>More...</div>
     </div>
-    <span id="close">&times</span>
-  </div>
-</body>
-
+    <div id="modal">
+      <div id="originalArea"></div>
+      <div id="shoppedArea">
+        <div>
+          <p>Shopped Images</p>
+          <h2 id="shoppedTitle"></h2>
+          <img id="shoppedImage">
+          <p id="username"></p>
+          <span id="leftClick">&lt;</span>
+          <span id="rightClick">&gt;</span>
+          <div id="shoppedButtons">
+          </div>
+        </div>
+      </div>
+      <span id="close">&times</span>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>

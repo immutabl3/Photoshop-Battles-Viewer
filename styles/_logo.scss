@@ -1,0 +1,17 @@
+.logo {
+	height: 125px;
+	width: 100%;
+	background-color: rgb(51, 102, 153);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__image {
+		height: 50px;
+	}
+
+	&__heading {
+		color: white;
+		font-weight: 100;
+	}
+}

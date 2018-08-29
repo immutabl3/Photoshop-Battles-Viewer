@@ -1,0 +1,24 @@
+{
+  "name": "photoshop-battles-viewer",
+  "version": "0.0.1",
+  "description": "A more accessible and aesthetic way to view the fun content from the [Photoshop Battles](https://www.reddit.com/r/photoshopbattles/) community on Reddit.",
+  "main": "script.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/immutabl3/Photoshop-Battles-Viewer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/immutabl3/Photoshop-Battles-Viewer/issues"
+  },
+  "homepage": "https://github.com/immutabl3/Photoshop-Battles-Viewer#readme",
+  "dependencies": {
+    "node-sass": "^4.9.3",
+    "parcel": "^1.9.7"
+  }
+}

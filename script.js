@@ -1,4 +1,6 @@
-$(document).ready(function() {
+import './styles/index.scss';
+
+(function() {
   const dataStore = window.localStorage;
   const clientID = "CKD4C_WLhbnNIQ";
   const imgurClientID = "e14d0c3e92233e1";
@@ -346,14 +348,8 @@ $(document).ready(function() {
     $("#originals").empty();
     paginationAfter = "";
 
-    $(".sorter").css({
-      "color": "rgb(51, 102, 153)",
-      "text-shadow": "none"
-    });
-    $(this).css({
-      "color": "#ff4500",
-      "text-shadow": "0px 1px 0px black"
-    });
+    $(".sorter--active").removeClass('sorter--active');
+    $(this).addClass('sorter--active');
 
     if (index === 1) {
       timeFrame = "all";
@@ -374,6 +370,5 @@ $(document).ready(function() {
   });
 
   init();
-}); // end of document.ready()
-
+}());
 // https://jsdeveloper.io/reddit-api-application-oauth-javascript/

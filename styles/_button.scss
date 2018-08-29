@@ -1,0 +1,24 @@
+.button {
+	position: fixed;
+	top: 35%;
+	height: 100px;
+	width: 100px;
+	color: white;
+	font-size: 75px;
+	font-weight: bold;
+	cursor: pointer;
+	user-select: none;
+
+	&--left-click {
+		left: 33%;
+	}
+
+	&--right-click {
+		right: 5%;
+	}
+
+	&--close {
+		left: 97%;
+		font-size: 50px;
+	}
+}
