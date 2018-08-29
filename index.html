@@ -12,36 +12,34 @@
         <h1 class="logo__heading">Photoshop Battles</h1>
       </div>
       <div class="sort">
-        <div class="sort__container">
+        <div id="sorter" class="sort__container">
           <p class="sorter--label">Sort posts by top of: </p>
-          <p class="sorter">All Time</p>
-          <p class="sorter">Year</p>
-          <p class="sorter">Month</p>
-          <p class="sorter">Week</p>
+          <p data-timeframe="all" class="sorter">All Time</p>
+          <p data-timeframe="year" class="sorter">Year</p>
+          <p data-timeframe="month" class="sorter">Month</p>
+          <p data-timeframe="week" class="sorter">Week</p>
         </div>
       </div>
     </header>
-    <section class="originals"></section>
-    <div id="more">
+    <section id="originals" class="originals"></section>
+    <div id="more" class="more">
       <div>More...</div>
     </div>
-    <div id="modal">
-      <div id="originalArea"></div>
-      <div id="shoppedArea">
+    <div id="modal" class="modal">
+      <div id="originalArea" class="original-area"></div>
+      <div class="shopped">
         <div>
           <p>Shopped Images</p>
-          <h2 id="shoppedTitle"></h2>
-          <img id="shoppedImage">
-          <p id="username"></p>
-          <span id="leftClick">&lt;</span>
-          <span id="rightClick">&gt;</span>
-          <div id="shoppedButtons">
-          </div>
+          <h2 id="shoppedTitle" class="shopped__title"></h2>
+          <img id="shoppedImage" class="shopped__image">
+          <p id="username" class="username"></p>
+          <button id="leftClick" class="button button--left-click">&lt;</button>
+          <button id="rightClick" class="button button--right-click">&gt;</button>
+          <div id="shoppedButtons" class="shopped__buttons"></div>
         </div>
       </div>
-      <span id="close">&times</span>
+      <button id="close" class="button button--close">&times</button>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

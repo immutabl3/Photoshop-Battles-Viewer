@@ -6,7 +6,7 @@
 	justify-content: center;
 }
 
-.originalCard {
+.original-card {
 	height: 400px;
 	width: 300px;
 	background-color: white;
@@ -17,69 +17,69 @@
 	box-shadow: 0 5px 5px 1px rgba(0,0,0,0.3);
 	border-radius: 5px;
 	margin: 30px;
-}
 
-.originalImage {
-	height: 60%;
-	background-color: lightgrey;
-	display: flex;
-	justify-content: center;
-	background-color: rgba(0,0,0,0);
+	&__image {
+		height: 60%;
+		background-color: lightgrey;
+		display: flex;
+		justify-content: center;
+		background-color: rgba(0,0,0,0);
 
-	div {
-		height: 100%;
-		width: 100%;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
-		border-top-left-radius: 5px;
-		border-top-right-radius: 5px;
-	}
-}
-
-.originalInfo {
-	height: 40%;
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-
-	p {
-		font-family: $font-primary;
-		text-align: center;
-		flex-basis: 100%;
-		align-self: center;
-		padding: 0 40px;
-		margin: 0 0;
-		opacity: 0.75;
-		font-weight: bold;
-		color: rgb(31, 82, 133);
-		font-style: italic;
+		div {
+			height: 100%;
+			width: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
 	}
 
-	.link {
-		font-family: $font-secondary;
-		width: 100%;
-		height: 50px;
-		line-height: 50px;
-		background-color: rgb(51, 102, 153);
-		text-align: center;
-		cursor: pointer;
-		align-self: flex-end;
+	&__info {
+		height: 40%;
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
-		color: white;
-		font-size: 1.1em;
-		
-		&:link {
-			text-decoration: none;
-			color: white;
+
+		p {
+			font-family: $font-primary;
+			text-align: center;
+			flex-basis: 100%;
+			align-self: center;
+			padding: 0 40px;
+			margin: 0 0;
+			opacity: 0.75;
+			font-weight: bold;
+			color: rgb(31, 82, 133);
+			font-style: italic;
 		}
 
-		&:hover {
-			background-color: rgb(90, 140, 190);
+		.link {
+			font-family: $font-secondary;
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			background-color: rgb(51, 102, 153);
+			text-align: center;
+			cursor: pointer;
+			align-self: flex-end;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			color: white;
+			font-size: 1.1em;
+			
+			&:link {
+				text-decoration: none;
+				color: white;
+			}
+
+			&:hover {
+				background-color: rgb(90, 140, 190);
+			}
 		}
 	}
 }

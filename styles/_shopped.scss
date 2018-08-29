@@ -1,4 +1,4 @@
-.shopped-area {
+.shopped {
 	flex-basis: 70%;
 
 	> div {
@@ -30,7 +30,7 @@
 		margin: 0 auto;
 	}
 
-	&__button {
+	&__buttons {
 		display: flex;
 		justify-content: space-around;
 		position: absolute;
