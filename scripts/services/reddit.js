@@ -23,7 +23,9 @@ export default {
 	},
 
 	// perform the subreddit get request after the user has valid token
-	getBattles(timeFrame, paginationAfter) {
+	getBattles({ timeFrame, paginationAfter }) {
+		console.log(timeFrame);
+		console.log(paginationAfter);
 		return request.get(`https://oauth.reddit.com/r/photoshopbattles/top/?sort=top&t=${timeFrame}&after=${paginationAfter}`)
 			.type('form')
 			.set({ Authorization: `Bearer ${global.localStorage.getItem('accessToken')}` })
