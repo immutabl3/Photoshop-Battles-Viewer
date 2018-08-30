@@ -4,8 +4,11 @@
   "description": "A more accessible and aesthetic way to view the fun content from the [Photoshop Battles](https://www.reddit.com/r/photoshopbattles/) community on Reddit.",
   "main": "script.js",
   "scripts": {
-    "start": "parcel index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node -r esm server",
+    "dev": "node -r dotenv/config -r esm server",
+    "debug": "node -r dotenv/config -r esm --inspect-brk server",
+    "watch": "parcel scripts/index.js styles/index.scss",
+    "build": "parcel build scripts/index.js styles/index.scss"
   },
   "repository": {
     "type": "git",
@@ -20,7 +23,12 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "baobab": "^2.5.2",
+    "btoa": "^1.2.1",
     "classnames": "^2.2.6",
+    "compression": "^1.7.3",
+    "dotenv": "^6.0.0",
+    "esm": "^3.0.81",
+    "express": "^4.16.3",
     "jquery": "^3.3.1",
     "lodash": "^4.17.10",
     "node-sass": "^4.9.3",

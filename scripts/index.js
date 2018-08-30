@@ -13,4 +13,8 @@ const init = async function() {
 	actions(store);
 	signal.trigger('load:cards');
 };
-init();
+Promise.resolve()
+	.then(init)
+	.catch(err => {
+		console.error(err);
+	});
